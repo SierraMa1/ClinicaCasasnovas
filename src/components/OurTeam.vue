@@ -12,7 +12,7 @@
        
         </div>
         <div class="bg-white p-6 rounded-lg shadow-lg">
-          <img src="path/to/doctor2.jpg" alt="Dra. Ana Martínez" class="w-32 h-32 mx-auto rounded-full mb-4">
+          <img src="@/assets/images/gutierrez.jpg" alt="Dra. Ana Martínez" class="w-40  h-40 mx-auto rounded-full mb-4">
           <h3 class="text-xl font-bold text-center">Dr. Juan Carlos.....</h3>
           <p class="text-center text-gray-700">Especialista en Implantes</p>
         </div>
