@@ -5,19 +5,25 @@
       <h2 class="text-3xl text-[#c9bba5] font-bold text-center mb-10">Conoce a Nuestro Equipo</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="bg-white p-6 rounded-lg shadow-lg">
-          <img src="@/assets/images/krizia.jpg" alt="Dr. Juan Pérez" class="w-32 h-32 mx-auto rounded-full mb-4">
+          <img src="@/assets/images/krizia.jpg" alt="Dra.KriziaCasanovas" class="w-32 mx-auto rounded-full mb-4">
           <h3 class="text-xl font-bold text-center">Dra.Krizia Casasnovas</h3>
-          <p class="text-center text-gray-700">Especialista en estética Dental y prostodoncia<br>Licenciada en Odontología. Universidad de Carabobo (UC), Venezuela.<br>Máster oficial en prótesis, implantoprótesis y estética dental avanzada. Universidad Europea de Madrid (UEM).<br>Diplomada en operatoria y estética dental mínimamente invasiva. Universidad Central de Venezuela (UCV).<br>Experta en estética labial y perioral.<br>Miembro de la sociedad española de prótesis estomatológica y estética dental (SEPES).
+          <p class="text-center text-gray-700">Especialista en estética Dental y prostodoncia<br>Licenciada en Odontología. Universidad de Carabobo (UC), Venezuela.<br>Máster oficial en prótesis, implantoprótesis y estética dental avanzada. Universidad Europea de Madrid (UEM).<br>Diplomada en operatoria y estética dental mínimamente invasiva. Universidad Central de Venezuela (UCV).<br>Experta en estética labial y perioral. Dra.Carla Barber<br>Miembro de la sociedad española de prótesis estomatológica y estética dental (SEPES).
 <br>Miembro de la sociedad venezolana de operatoria dental, estética y biomateriales (SVODEB)</p>
        
         </div>
         <div class="bg-white p-6 rounded-lg shadow-lg">
-          <img src="@/assets/images/gutierrez.jpg" alt="Dra. Ana Martínez" class="w-40  h-40 mx-auto rounded-full mb-4">
+          <img src="@/assets/images/gutierrez.jpg" alt="Dr.Juan Carlos Gutierrez" class="w-32 mx-auto rounded-full mb-4">
           <h3 class="text-xl font-bold text-center">Dr. Juan Carlos.....</h3>
-          <p class="text-center text-gray-700">Especialista en Implantes</p>
+          <p class="text-center text-gray-700">Especialista en Implantes<br>Licenciado en Odontología<br>–Univ Europea de Madrid 2005-2010
+Master Propio en Cirugía bucal<br> - Universidad de Sevilla
+Máster Propio en Cirugía Bucal Avanzada<br> - Universidad de Sevilla
+Postgrado en Implantologia<br>– Univ Complutense de Madrid.
+Experto en Anatomía Oral aplicada a la Implantología e Implantoprotesis por la Universidad de Sevilla
+Título de especialización Universitaria en Cirugía y Rehabilitación Implantología por la Universidad de Sevilla.
+Comunicaciones en congresos y publicaciones en revistas de alto impacto.</p>
         </div>
         <div class="bg-white p-6 rounded-lg shadow-lg">
-          <img src="@/assets/images/eli.jpg" alt="Dr. Carlos López" class="w-32 h-32 mx-auto rounded-full mb-4">
+          <img src="@/assets/images/eli.jpg" alt="Elisabeth Benitez" class="w-32 mx-auto rounded-full mb-4">
           <h3 class="text-xl font-bold text-center">Elisabeth Benitez</h3>
           <p class="text-center text-gray-700">Higienista</p>
         </div>
