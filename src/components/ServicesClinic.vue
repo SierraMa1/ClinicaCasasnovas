@@ -1,12 +1,12 @@
 <template>
   <section id="services" class="py-44 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl text-[#c9bba5] font-bold text-center mb-10">Tratamientos</h2>
-      <div class="relative">
+    <div class="container mx-auto px-4 ">
+      <h2 class="text-3xl text-[#c9bba5] font-bold text-center mb-10 font-chillax">Tratamientos</h2>
+      <div class="relative rounded-lg shadow-lg">
         <div class="grid grid-cols-1 gap-8">
-          <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-            <h3 class="text-2xl font-bold mb-4 text-center">{{ treatments[currentIndex].title }}</h3>
-            <h2 v-if="treatments[currentIndex].subtitle" class="text-lg font-semibold mb-4 text-center">
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg font-switzer">
+            <h3 class="text-2xl font-bold mb-4 text-center  ">{{ treatments[currentIndex].title }}</h3>
+            <h2 v-if="treatments[currentIndex].subtitle" class="text-lg font-semibold mb-4 text-center ">
               {{ treatments[currentIndex].subtitle }}
             </h2>
             <p class="text-gray-700" v-html="treatments[currentIndex].description"></p>
@@ -38,8 +38,20 @@ export default {
           title: "Implantes Dentales",
           description: "En Clínica Casasnovas, ofrecemos tratamientos de implantes dentales avanzados para restaurar tu sonrisa y mejorar tu salud bucal. Los implantes dentales son una solución eficaz y duradera para reemplazar dientes perdidos, proporcionando una apariencia natural y funcionalidad completa. Nuestro equipo de expertos utiliza tecnología de vanguardia para asegurar resultados exitosos. Si buscas un implante dental en Málaga, en la Cala del Moral, contáctanos para una consulta personalizada. ¡Recupera tu sonrisa hoy mismo con los mejores profesionales!"
         },
-     
-        
+        {
+          title: "Carillas de Cerámica",
+          subtitle: " Sonrisa Perfecta y Natural",
+          description: "En Clínica Casasnovas, ofrecemos carillas de cerámica para transformar tu sonrisa. Las carillas de cerámica son láminas finas de porcelana que se colocan sobre los dientes para mejorar su forma, color y apariencia. Este tratamiento corrige imperfecciones como manchas, dientes desalineados, diastemas y desgastes, proporcionando una sonrisa más estética y natural.<br>Ventajas de las carillas de cerámica:<br>•Aspecto natural: La cerámica imita el aspecto del esmalte dental.<br>•Durabilidad: Las carillas de cerámica son resistentes y de larga duración.<br>•Tratamiento rápido y mínimamente invasivo: No requieren tallar el diente significativamente."
+        },
+        {
+          title: "Blanqueamiento Dental",
+          subtitle: " Sonrisa Más Blanca y Radiante",
+          description: "En Clínica Casasnovas, ofrecemos blanqueamiento dental profesional para recuperar el brillo y blancura de tus dientes. Este tratamiento efectivo elimina manchas causadas por alimentos, bebidas o el envejecimiento, devolviendo a tu sonrisa su apariencia natural y saludable.<br>Ventajas del blanqueamiento dental:<br>•Seguro y eficaz: Tratamiento realizado por profesionales para garantizar tu salud dental.<br>•Mejora la estética: Dientes más blancos y radiantes.."
+        },
+        {
+          title: "Limpieza Dental",
+          description: "En Clínica Casasnovas, ofrecemos una limpieza dental profesional para mantener tu salud bucal en su mejor estado. Este tratamiento consiste en eliminar el sarro, la placa bacteriana y las manchas superficiales de los dientes, ayudando a prevenir enfermedades como la gingivitis y periodontitis. Además, la limpieza dental mejora la estética de tu sonrisa, dejándola más blanca y saludable.<br>Beneficios de la limpieza dental:<br>•Prevención de caries y enfermedades de las encías.<br>•Mejora la apariencia de los dientes al eliminar manchas.<br>•Resultados inmediatos y sensación de frescura."
+        },
       ]
     };
   },

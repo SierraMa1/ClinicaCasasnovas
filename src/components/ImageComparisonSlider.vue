@@ -1,12 +1,12 @@
 <template>
   <div class="relative w-full max-w-2xl mx-auto mt-8">
-    <div class="relative overflow-hidden h-[400px]">
+    <div class="relative overflow-hidden h-[400px] ">
       
      
       <img 
         :src="beforeImage" 
         alt="Before Image" 
-        class="absolute w-full h-full object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-110 hover:opacity-80"
+        class="absolute w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110  hover:opacity-80 rounded-3xl"
       />
       
       
@@ -17,7 +17,7 @@
         <img 
           :src="afterImage" 
           alt="After Image" 
-          class="absolute w-full h-full object-cover rounded-2xl"
+          class="absolute w-full h-full object-cover rounded-3xl"
         />
       </div>
       

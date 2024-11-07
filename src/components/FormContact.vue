@@ -63,9 +63,9 @@
     },
     methods: {
       submitForm() {
-        // Aquí puedes manejar el envío del formulario
+       
         alert(`Mensaje enviado por: ${this.contactForm.name}`);
-        // Reinicia el formulario
+       
         this.contactForm.name = '';
         this.contactForm.email = '';
         this.contactForm.message = '';

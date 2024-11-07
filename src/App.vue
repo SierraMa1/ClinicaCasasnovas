@@ -4,11 +4,11 @@
    <AboutUs />
    <ClinicSection />
    <OurTeam />
-  <ComparacionImagen />
    <ServiceClinic />
+   <ComparacionImagen />
    <TestimoniosPacientes/>
+   <FAQ />
    <WhatsAppButton />
-  <FAQ />
   <ContactSection />
    <FinalPage />
 </template>
