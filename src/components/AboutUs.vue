@@ -1,6 +1,6 @@
 <template>
-    <section id="sobrenosotros" class=" py-44 bg-gray-100">
-      <div class="container mx-auto px-4">
+    <section id="sobrenosotros" class=" py-44 bg-gray-100 bg-gradient-to-b from-[#979499] to-[#f3f0e9]">
+      <div class="container mx-auto px-4 ">
         <h2 class="text-3xl text-[#c9bba5] font-bold text-center mb-10">Sobre Nosotros</h2>
         <div class="flex flex-col md:flex-row items-center">
           <img src="@/assets/images/nosotros.jpg" alt="Clínica Dental" class="w-full md:w-1/2 rounded-lg shadow-lg mb-6 md:mb-0">

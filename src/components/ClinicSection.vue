@@ -1,20 +1,25 @@
 <template>
-    <div id="clinica" class="container mx-auto mt-8">
-      <h2 class="text-4xl font-bold text-center mb-6 text-[#c9bba5] ">La Clínica</h2>
-      <p class="text-lg text-gray-700 mb-6 text-center">
-        En Clínica Casasnovas, contamos con las mejores instalaciones y la tecnología más innovadora para cuidar de tu sonrisa.
-      </p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 bg-gradient-to-b from-[#979499]">
+  <div id="clinica" class="container mx-auto mt-8 mb-8">
+    <h2 class="text-4xl font-bold text-center mb-6 text-[#c9bba5]">La Clínica</h2>
+    <p class="text-lg text-gray-700 mb-6 text-center">
+      En Clínica Casasnovas, contamos con las mejores instalaciones y la tecnología más innovadora para cuidar de tu sonrisa.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 bg-gradient-to-b from-[#979499]">
+      <div 
+        v-for="(photo, index) in photos" 
+        :key="index" 
+        class="relative overflow-hidden rounded-lg shadow-md group"
+      >
         <img
-          v-for="(photo, index) in photos"
-          :key="index"
           :src="photo.src"
           :alt="photo.alt"
-          class="w-full h-96 object-cover rounded-lg shadow-md"
+          class="w-full h-80 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
         />
       </div>
     </div>
-  </template>
+  </div>
+</template>
+
   
   <script>
   export default {
@@ -33,5 +38,5 @@
   </script>
   
   <style scoped>
-  /* Aquí puedes agregar estilos específicos para el componente si es necesario */
+ 
   </style>
