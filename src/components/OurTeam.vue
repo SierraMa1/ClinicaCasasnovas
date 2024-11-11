@@ -8,7 +8,7 @@
           <img src="@/assets/images/krizia.jpg" alt="Dra.KriziaCasanovas" class="w-32 mx-auto rounded-full mb-4">
           <h3 class="text-xl font-bold text-center font-chillax">Dra.Krizia Casasnovas</h3>
           <h2 class="text-center text-gray-700 font-semibold text-lg font-switzer">Especialista en estética Dental y prostodoncia</h2>
-          <p class="text-center text-gray-700 font-switzer"><br>Licenciada en Odontología. Universidad de Carabobo (UC), Venezuela.
+          <p class="text-justify text-gray-700 font-switzer"><br>•Licenciada en Odontología. Universidad de Carabobo (UC), Venezuela.
             <br>•Máster oficial en prótesis, implantoprótesis y estética dental avanzada. Universidad Europea de Madrid (UEM).<br>•Diplomada en operatoria y estética dental mínimamente invasiva. Universidad Central de Venezuela (UCV).
             <br>•Experta en estética labial y perioral. Dra.Carla Barber
             <br>•Miembro de la sociedad española de prótesis estomatológica y estética dental (SEPES).
@@ -19,7 +19,7 @@
           <img src="@/assets/images/gutierrez.jpg" alt="Dr.Juan Carlos Gutierrez" class="w-32 mx-auto rounded-full mb-4">
           <h3 class="text-xl font-bold text-center font-chillax">Dr. Juan Carlos Gutierrez</h3>
           <h2 class="text-center text-gray-700 font-semibold text-lg font-switzer">Especialista en Implantes</h2>
-          <p class="text-center text-gray-700 font-switzer"><br>•Licenciado en Odontología Univ Europea de Madrid 2005-2010
+          <p class="text-justify text-gray-700 font-switzer"><br>•Licenciado en Odontología Univ Europea de Madrid 2005-2010
             <br>•Master Propio en Cirugía bucal Universidad de Sevilla
             <br>•Máster Propio en Cirugía Bucal Avanzada Universidad de Sevilla
             <br>•Postgrado en Implantologia Univ Complutense de Madrid.
@@ -31,7 +31,7 @@
           <img src="@/assets/images/eli.jpg" alt="Elisabeth Benitez" class="w-32 mx-auto rounded-full mb-4">
           <h3 class="text-xl font-bold text-center font-chillax">Elisabeth Benitez</h3>
           <h2 class="text-center text-gray-700 font-semibold text-lg font-switzer">Higienista</h2>
-          <p class="text-center text-gray-700"></p>
+          <p class="text-justify text-gray-700"><br>•Técnico en Higiene bucodental Ecodents.<br>•Atención al paciente<br>•Riesgos laborales<br> </p>
         </div>
       </div>
     </div>

@@ -7,10 +7,10 @@
    <ServiceClinic />
    <ComparacionImagen />
    <TestimoniosPacientes/>
-   <FAQ />
-   <WhatsAppButton />
+   <WhatsAppButton/>
   <ContactSection />
-   <FinalPage />
+  <FAQ />
+   <FinalPage/>
 </template>
 
 <script>

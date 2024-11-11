@@ -1,23 +1,28 @@
 <template>
-  <div class="relative">
-    <div class="mb-8 rounded-lg shadow-2xl h-40">
-      <h3 class="text-xl font-bold mb-2 text-center font-chillax">{{ currentQuestion.question }}</h3>
-      <p class="text-center font-switzer">{{ currentQuestion.answer }}</p>
-    
-    <div class="flex justify-between">
-      <button @click="previousQuestion" class="bg-[#c9bba5] text-white p-2 rounded-full" :disabled="currentIndex === 0">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-      <button @click="nextQuestion" class="bg-[#c9bba5] text-white p-2 rounded-full" :disabled="currentIndex === questions.length - 1">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
+   <section id="faq" class="py-12 sm:py-20 bg-gradient-to-b from-[#979499] to-current text-white">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10 font-chillax">Preguntas Frecuentes</h2>
+  <div class=" container mx-auto rounded-lg bg-white text-gray-800 p-4 sm:p-6 ">
+    <div class="flex flex-col h-full justify-between min-h-[200px]">
+      <div class="flex-grow flex flex-col justify-center relative">
+        <h3 class="text-lg sm:text-xl font-bold mb-2 text-center font-chillax">{{ currentQuestion.question }}</h3>
+        <p class="text-sm sm:text-base text-center font-switzer mb-4">{{ currentQuestion.answer }}</p>
+        
+        <div class="absolute left-0 right-0 flex justify-between px-2 sm:px-4 top-1/2 -translate-y-1/2">
+          <button @click="previousQuestion" class="bg-[#c9bba5] text-white p-2 sm:p-3 rounded-full transition-all hover:bg-[#b0a08e]" :disabled="currentIndex === 0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button @click="nextQuestion" class="bg-[#c9bba5] text-white p-2 sm:p-3 rounded-full transition-all hover:bg-[#b0a08e]" :disabled="currentIndex === questions.length - 1">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
-  </div>
+</section>
 </template>
   
   <script>

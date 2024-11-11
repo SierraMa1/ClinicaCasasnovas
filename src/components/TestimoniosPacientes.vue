@@ -1,26 +1,27 @@
 <template>
-  <section class="py-20 bg-gradient-to-b from-[#979499] to-current text-white">
-    <div class="container mx-auto px-4 relative">
-      <h2 class="text-3xl font-bold text-center mb-10 ">Testimonios de Pacientes</h2>
-      <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
-        <p class="italic mb-4 mx-20">{{ testimonios[currentIndex].texto }}</p>
-        <p class="font-bold mx-20">- {{ testimonios[currentIndex].autor }}</p>
+<section id="testimonios" class="py-12 sm:py-20 bg-gradient-to-b from-[#979499] to-current text-white">
+  <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10 font-chillax">Testimonios de Pacientes</h2>
+  <div class="container mx-auto rounded-lg bg-white text-gray-800 p-4 sm:p-6">
+    <div class="flex flex-col h-full justify-between min-h-[200px] relative">
+      <div class="flex-grow flex flex-col justify-center">
+        <p class="italic mb-4 text-sm sm:text-base mx-4 sm:mx-20 font-switzer">{{ testimonios[currentIndex].texto }}</p>
+        <p class="font-bold text-sm sm:text-base mx-4 sm:mx-20 font-switzer">- {{ testimonios[currentIndex].autor }}</p>
       </div>
-    <!-- Botón anterior -->
-    <button @click="prevTestimonio" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-[#c9bba5] text-white p-2 rounded-full">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+      
+      <button @click="prevTestimonio" class="absolute top-1/2 left-0 sm:left-2 transform -translate-y-1/2 bg-[#c9bba5] text-white p-2 rounded-full hover:bg-[#b0a08e] transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4 sm:h-6 sm:w-6">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
         </svg>
       </button>
-      <!-- Botón siguiente -->
-      <button @click="nextTestimonio" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#c9bba5] text-white p-2 rounded-full">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+      
+      <button @click="nextTestimonio" class="absolute top-1/2 right-0 sm:right-2 transform -translate-y-1/2 bg-[#c9bba5] text-white p-2 rounded-full hover:bg-[#b0a08e] transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4 sm:h-6 sm:w-6">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
         </svg>
       </button>
     </div>
-      
-  </section>
+  </div>
+</section>
 </template>
 
 <script>

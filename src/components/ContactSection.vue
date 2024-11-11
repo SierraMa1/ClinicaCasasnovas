@@ -3,8 +3,14 @@
       <div class="container mx-auto px-4">
         <h2 class="text-3xl text-[#c9bba5] font-bold text-center mb-10 font-switzer">Contáctanos</h2>
         <div class="flex flex-col md:flex-row md:justify-between items-center">
-          <!-- Formulario de Contacto -->
-          <div class="w-full md:w-1/2 p-4">
+          <div class="w-full h-64 md:h-full rounded-lg shadow-lg overflow-hidden">
+            <h1 class="text-[#c9bba5] font-bold  font-chillax text-3xl">Clínica Casasnovas</h1>
+            <p class=" font-semibold font-switzer text-xl">Dirección: Av. de Málaga, 100, 29720 La Cala del Moral, Málaga</p>
+            <p class="font-semibold font-switzer text-xl">Teléfono: <a href="https://wa.me/34686401319" target="_blank" rel="noopener noreferrer" class="text-[#c9bba5] text-xl font-bold hover:underline">686401319</a>
+   
+</p>
+          </div>
+         <!--  <div class="w-full md:w-1/2 p-4">
             <form @submit.prevent="submitForm" class="bg-gray-100 p-6 rounded-lg shadow-lg">
               <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2 font-chillax" for="name">Nombre</label>
@@ -47,8 +53,8 @@
               </button>
             </form>
           </div>
-  
-          <!-- Mapa de Ubicación -->
+   -->
+      
           <div class="w-full h-64 md:h-96 p-4">
             <div class="w-full h-64 md:h-full rounded-lg shadow-lg overflow-hidden">
               <iframe
@@ -82,7 +88,7 @@
     },
     methods: {
       submitForm() {
-        // Aquí puedes manejar el envío del formulario
+     
         alert(`Mensaje enviado por: ${this.contactForm.name}`);
         // Reinicia el formulario
         this.contactForm.name = '';
@@ -94,6 +100,6 @@
   </script>
   
   <style scoped>
-  /* Estilos adicionales para la sección de contacto */
+
   </style>
   

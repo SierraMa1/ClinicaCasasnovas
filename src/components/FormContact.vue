@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <section id="contact" class="py-20 bg-white">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-10">Contáctanos</h2>
@@ -75,5 +75,5 @@
   </script>
   
   <style scoped>
-  /* Estilos adicionales si es necesario */
-  </style>
+ 
+  </style> -->
