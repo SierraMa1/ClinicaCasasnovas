@@ -38,7 +38,7 @@ export default {
           <a href="#testimonios" class="text-[#c9bba5] font-semibold hover:underline hover:text-[#f3f0e9]">Testimonios</a>
         </nav>
         <div class="flex items-center space-x-4">
-          <a href="https://www.instagram.com/dra.kriziacasasnovas/?hl=es" target="_blank" rel="noopener noreferrer" class="text-lg font-bold hover:underline flex items-center">
+          <a href="https://www.instagram.com/dra.kriziacasasnovas/?hl=es" target="_blank" rel="noopener noreferrer" class="text-md font-bold hover:underline flex items-center">
             <img src="@/assets/icons/instagram.jpg" alt="Instagram" class="w-8 h-8">
           </a>
           <a href="https://wa.me/34686401319" target="_blank" rel="noopener noreferrer" class="py-2 px-4 lg:py-3 lg:px-6 rounded-full bg-[#c9bba5] hover:bg-[#f3f0e9] hover:text-[#c9bba5] text-[#f3f0e9] font-bold text-sm md:text-lg lg:text-xl transition duration-300">Pedir Cita</a>
@@ -72,3 +72,8 @@ export default {
     </div>
   </main>
 </template>
+<style scoped>
+@media (max-width: 1536px) {
+
+}
+</style>

@@ -1,19 +1,22 @@
 <template>
-  <section id="services" class="py-44 bg-white">
-    <div class="container mx-auto px-4 ">
-      <h2 class="text-3xl text-[#c9bba5] font-bold text-center mb-10 font-chillax">Tratamientos</h2>
-      <div class="relative rounded-lg shadow-lg">
-        <div class="grid grid-cols-1 gap-8">
-          <div class="bg-gray-100 p-6 rounded-lg shadow-lg font-switzer">
-            <h3 class="text-2xl font-bold mb-4 text-center  ">{{ treatments[currentIndex].title }}</h3>
-            <h2 v-if="treatments[currentIndex].subtitle" class="text-lg font-semibold mb-4 text-center ">
+  <section id="services" class="h-screen py-14 sm:py-20  bg-white">
+    <h2 class=" text-[#c9bba5] text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10 font-chillax py-20">Tratamientos</h2>
+    <div class="container mx-auto rounded-lg bg-white text-gray-800 p-4 sm:p-6">
+      <div class="flex flex-col h-full justify-between min-h-[200px] relative">
+        <div class="flex-grow flex flex-col justify-center">
+            <p class=" font-switzer font-bold mb-4 text-center text-xl">{{ treatments[currentIndex].title }}</p>
+            <p v-if="treatments[currentIndex].subtitle" class="text-lg font-semibold mb-4 text-center ">
               {{ treatments[currentIndex].subtitle }}
-            </h2>
-            <p class="text-gray-700" v-html="treatments[currentIndex].description"></p>
-          </div>
+            </p>
+            <p class="text-gray-700 text-sm sm:text-base mx-4 sm:mx-20 font-switzer" v-html="treatments[currentIndex].description"></p>
         </div>
-        <button @click="nextTreatment" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#c9bba5] text-white p-2 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+        <button @click="prevTreatment" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-[#c9bba5] text-white p-3 rounded-full hover:bg-[#b0a08e] transition-colors duration-300 z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4 sm:h-6 sm:w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button @click="nextTreatment" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#c9bba5] text-white p-2 rounded-full hover:bg-[#b0a08e] transition-colors duration-300 z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4 sm:h-6 sm:w-6">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
         </button>
@@ -58,6 +61,9 @@ export default {
   methods: {
     nextTreatment() {
       this.currentIndex = (this.currentIndex + 1) % this.treatments.length;
+    },
+    prevTreatment() {
+      this.currentIndex = (this.currentIndex - 1 + this.treatments.length) % this.treatments.length;
     }
   }
 };

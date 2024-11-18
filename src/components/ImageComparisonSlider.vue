@@ -1,12 +1,12 @@
 <template>
-  <div class="relative w-full max-w-2xl mx-auto mt-8">
-    <div class="relative overflow-hidden h-[400px] ">
+  <div class="relative w-full max-w-2xl mx-auto mt-8 ">
+    <div class="relative overflow-hidden h-[400px]  text-white ">
       
      
       <img 
         :src="beforeImage" 
         alt="Before Image" 
-        class="absolute w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110  hover:opacity-80 rounded-3xl"
+        class="absolute w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110  hover:opacity-80 rounded-3xl text-white "
       />
       
       

@@ -1,9 +1,9 @@
 <template>
-  <div id="ttos" class=" bg-gradient-to-b from-[#CCC9CD] to-[#f3f0e9] min-h-screen p-4">
+  <div id="ttos" class=" min-h-screen p-4">
     <h1 class="text-4xl font-bold text-center text-[#c9bba5] mb-8">
       Comparación de Tratamientos Dentales
     </h1>
-    <div class=" grid grid-cols-2">
+    <div class=" grid grid-cols-2 ">
       <ImageComparisonSlider
       :beforeImage="require('@/assets/images/ttos/compositeAntes1.jpeg')"
       :afterImage="require('@/assets/images/ttos/compositeDespues1.jpeg')"
