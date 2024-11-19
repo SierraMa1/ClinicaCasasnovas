@@ -1,25 +1,34 @@
 <template>
-  <section id="services" class="h-screen py-14 sm:py-20  bg-white">
-    <h2 class=" text-[#c9bba5] text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10 font-chillax py-20">Tratamientos</h2>
-    <div class="container mx-auto rounded-lg bg-white text-gray-800 p-4 sm:p-6">
-      <div class="flex flex-col h-full justify-between min-h-[200px] relative">
-        <div class="flex-grow flex flex-col justify-center">
-            <p class=" font-switzer font-bold mb-4 text-center text-xl">{{ treatments[currentIndex].title }}</p>
-            <p v-if="treatments[currentIndex].subtitle" class="text-lg font-semibold mb-4 text-center ">
-              {{ treatments[currentIndex].subtitle }}
-            </p>
-            <p class="text-gray-700 text-sm sm:text-base mx-4 sm:mx-20 font-switzer" v-html="treatments[currentIndex].description"></p>
+  <section id="services" class="min-h-screen py-14 sm:py-20 bg-white">
+    <h1 class="text-[#c9bba5] text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10 font-chillax py-20">Tratamientos</h1>
+    <div class="container rounded-lg shadow-lg bg-slate-50 text-gray-800 p-4 sm:p-6 sm:mx-4 lg:mx-12 xl:mx-24 2xl:mx-28">
+      <div class="relative min-h-[200px] flex flex-col justify-center">
+        <div class="flex-grow flex flex-col justify-center items-center text-center">
+          <h2 class="font-switzer font-bold mb-4 text-xl text-[#c9bba5]">{{ treatments[currentIndex].title }}</h2>
+          <p v-if="treatments[currentIndex].subtitle" class="text-lg font-semibold mb-4">
+            {{ treatments[currentIndex].subtitle }}
+          </p>
+          <p class="text-gray-700 text-sm sm:text-base mx-4 sm:mx-20" v-html="treatments[currentIndex].description"></p>
         </div>
-        <button @click="prevTreatment" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-[#c9bba5] text-white p-3 rounded-full hover:bg-[#b0a08e] transition-colors duration-300 z-10">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4 sm:h-6 sm:w-6">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-        <button @click="nextTreatment" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#c9bba5] text-white p-2 rounded-full hover:bg-[#b0a08e] transition-colors duration-300 z-10">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4 sm:h-6 sm:w-6">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
+        <!-- Botones centrados -->
+        <div class="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 flex justify-between">
+          <button 
+            @click="prevTreatment" 
+            class="bg-[#c9bba5] text-white p-3 rounded-full hover:bg-[#b0a08e] transition-colors duration-300 z-10  "
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4 sm:h-6 sm:w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button 
+            @click="nextTreatment" 
+            class="bg-[#c9bba5] text-white p-3 rounded-full hover:bg-[#b0a08e] transition-colors duration-300 z-10"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4 sm:h-6 sm:w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </section>
