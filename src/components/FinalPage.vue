@@ -8,7 +8,7 @@
         </div>
          <div class="text-center sm:text-right">
            <p class="font-chillax text-lg sm:text-xl mb-2">Designed by:</p>
-             <a href="https://www.tupaginadeldisenador.com" target="_blank" rel="noopener noreferrer" class="flex items-center          justify-center sm:justify-end">
+             <a href="https://sierrama1.github.io/" target="_blank" rel="Desarrolladora Web" class="flex items-center          justify-center sm:justify-end">
                <img src="@/assets/images/logoMaria.png" alt="Logo de María Sierra Sánchez" class="w-20 h-20 mr-2">
                <span class="font-chillax text-base sm:text-lg hover:underline font-bold">María Sierra Sánchez</span>
              </a>
